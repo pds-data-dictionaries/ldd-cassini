@@ -95,9 +95,10 @@ jobs:
         if: ${{ always() }}
 
   upload_logs: # job 3
-    name: 'Add Execution Logs to Github'
+    name: 'Add Run Logs to Github'
     runs-on: ubuntu-latest
-    if: ${{ github.actor != 'pdsen-ci' }}
+    needs: build
+    if: ${{ always() && github.actor != 'pdsen-ci' }}
 
     steps:
       - uses: actions/checkout@v2
