@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:cassini  Version:1.5.0.0 - Fri Jul 02 23:13:29 UTC 2021 -->
+  <!-- PDS4 Schematron for Name Space Id:cassini  Version:1.5.0.0 - Fri Jul 02 23:43:58 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model Version 1.13.0.0 - System Build 10a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
@@ -9,7 +9,6 @@
   <sch:ns uri="http://www.w3.org/2001/XMLSchema-instance" prefix="xsi"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/pds/v1" prefix="pds"/>
   <sch:ns uri="http://pds.nasa.gov/pds4/mission/cassini/v1" prefix="cassini"/>
-  <sch:ns uri="http://pds.nasa.gov/pds4/example/v1" prefix="example"/>
 
 		   <!-- ================================================ -->
 		   <!-- NOTE:  There are two types of schematron rules.  -->
