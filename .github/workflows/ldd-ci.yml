@@ -156,7 +156,7 @@ jobs:
           git add -A $(dirname ${{ env.DEPLOY_PATH }})
           git commit -m "Auto-generated LDD by PDSEN CI Bot"
           git push origin HEAD
-        if: ${{ build.status == "success" }}
+        if: ${{ jobs.build.status == "success" }}
 
       - name: Push logs to Github
         run: |  
