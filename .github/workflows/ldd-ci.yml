@@ -94,11 +94,10 @@ jobs:
           path: ${{ env.LOGS_PATH }}
         if: ${{ always() }}
 
-
-  upload: # job 2
+  upload: # job 3
     name: 'Upload LDDs to Github Repo'
     runs-on: ubuntu-latest
-    if: github.actor != 'pdsen-ci'
+    if: always() AND github.actor != 'pdsen-ci'
 
     steps:
       - uses: actions/checkout@v2
