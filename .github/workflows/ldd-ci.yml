@@ -97,7 +97,7 @@ jobs:
   upload: # job 3
     name: 'Upload LDDs to Github Repo'
     runs-on: ubuntu-latest
-    if: ${{ always() AND github.actor != 'pdsen-ci' }}
+    if: ${{ always() && github.actor != 'pdsen-ci' }}
 
     steps:
       - uses: actions/checkout@v2
