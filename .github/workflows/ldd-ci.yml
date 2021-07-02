@@ -153,11 +153,17 @@ jobs:
         run: |  
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
-          git add -A $(dirname ${{ env.DEPLOY_PATH }}) ${{ env.LOGS_PATH }}
-          git commit -m "Auto-generated LDD by PDSEN CI Bot
+          git add -A $(dirname ${{ env.DEPLOY_PATH }})
+          git commit -m "Auto-generated LDD by PDSEN CI Bot"
+          git push origin HEAD
+        if: ${{ build.status == "success" }}
 
-
-          skip-checks: true"
+      - name: Push logs to Github
+        run: |  
+          git config --local user.email "pdsen-ci@jpl.nasa.gov"
+          git config --local user.name "PDSEN CI Bot"
+          git add -A ${{ env.LOGS_PATH }}
+          git commit -m "Add logs from auto-generated LDD"
           git push origin HEAD
 
     needs: build
