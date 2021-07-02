@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 XML product label for PDS4 V1.13.0.0  Fri Jul 02 23:13:29 UTC 2021 -->
+  <!-- PDS4 XML product label for PDS4 V1.13.0.0  Fri Jul 02 23:43:58 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model V1.13.0.0 - System Build 10a -->
   <!-- *** This PDS4 XML product label is an operational deliverable. *** -->
 <?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1D00.sch"
@@ -26,9 +26,9 @@
     <File_Area_XML_Schema>
         <File>
             <file_name>PDS4_CASSINI_1D00_1500.xsd</file_name>
-            <creation_date_time>2021-07-02T16:13:29</creation_date_time>
-            <file_size unit="byte">174498</file_size>
-            <records>3454</records>
+            <creation_date_time>2021-07-02T16:43:58</creation_date_time>
+            <file_size unit="byte">174126</file_size>
+            <records>3450</records>
         </File>
         <XML_Schema>
             <name>PDS4_CASSINI_1D00_1500.xsd</name>
@@ -40,9 +40,9 @@
     <File_Area_XML_Schema>
         <File>
             <file_name>PDS4_CASSINI_1D00_1500.sch</file_name>
-            <creation_date_time>2021-07-02T16:13:29</creation_date_time>
-            <file_size unit="byte">50334</file_size>
-            <records>554</records>
+            <creation_date_time>2021-07-02T16:43:58</creation_date_time>
+            <file_size unit="byte">50263</file_size>
+            <records>553</records>
         </File>
         <XML_Schema>
             <name>PDS4_CASSINI_1D00_1500.sch</name>
