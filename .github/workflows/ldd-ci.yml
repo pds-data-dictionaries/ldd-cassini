@@ -94,11 +94,11 @@ jobs:
           path: ${{ env.LOGS_PATH }}
         if: ${{ always() }}
 
-  upload_logs: # job 3
+  upload_logs_only: # job 3
     name: 'Add Run Logs to Github'
     runs-on: ubuntu-latest
     needs: build
-    if: ${{ always() && github.actor != 'pdsen-ci' }}
+    if: ${{ failure() && github.actor != 'pdsen-ci' }}
 
     steps:
       - uses: actions/checkout@v2
@@ -131,8 +131,8 @@ jobs:
           git push origin HEAD
 
 
-  upload_ldds: # job 3
-    name: 'Add LDDs to Github'
+  upload_all: # job 3
+    name: 'Add LDDs and Logs to Github'
     runs-on: ubuntu-latest
     needs: build
     if: ${{ github.actor != 'pdsen-ci' }}
@@ -166,7 +166,7 @@ jobs:
           cp -R /tmp/artifacts/*LDDs/* ${{ env.DEPLOY_PATH }}
 
       - name: Display structure of downloaded files
-        run: ls -R ${{ env.DEPLOY_PATH }}
+        run: ls -R ${{ env.DEPLOY_PATH }} ${{ env.LOGS_PATH }}
 
       - name: If Release Branch, move to release dir
         shell: bash
@@ -177,9 +177,11 @@ jobs:
           fi
 
       - name: Push LDDs to Github
-        run: |  
+        run: |
+
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
-          git add -A $(dirname ${{ env.DEPLOY_PATH }})
+          git add -A $(dirname ${{ env.DEPLOY_PATH }}) ${{ env.LOGS_PATH }}
           git commit -m "Auto-generated LDD by PDSEN CI Bot"
           git push origin HEAD
+
