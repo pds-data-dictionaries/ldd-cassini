@@ -175,7 +175,7 @@ jobs:
           cp -R /tmp/artifacts/*LDDs/* ${{ env.DEPLOY_PATH }}
 
       - name: Display structure of downloaded files
-        run: ls -R ${{ env.DEPLOY_PATH }} ${{ env.LOGS_PATH }}
+        run: ls -R ${{ env.DEPLOY_PATH }}
 
       - name: If Release Branch, move to release dir
         shell: bash
