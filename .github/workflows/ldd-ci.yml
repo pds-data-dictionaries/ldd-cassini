@@ -160,10 +160,6 @@ jobs:
           path=$(dirname ${{ env.DEPLOY_PATH }})
           rm -fr $path/*
 
-          path=$(dirname ${{ env.LOGS_PATH }})
-          rm -fr $path/*
-
-
       - name: Move the LDDs to their new home
         run: |
           mkdir -p ${{ env.DEPLOY_PATH }}
@@ -182,7 +178,6 @@ jobs:
 
       - name: Push LDDs to Github
         run: |
-
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
           git add -A $(dirname ${{ env.DEPLOY_PATH }}) ${{ env.LOGS_PATH }}
