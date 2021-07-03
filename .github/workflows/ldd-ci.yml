@@ -168,7 +168,6 @@ jobs:
           path=$(dirname ${{ env.LOGS_PATH }})
           rm -fr $path/*
 
-
       - name: Move the LDDs to their new home
         run: |
           mkdir -p ${{ env.DEPLOY_PATH }}
@@ -185,7 +184,16 @@ jobs:
             cp -R ${{ env.DEPLOY_PATH }}/* ${{github.workspace}}/build/release/            
           fi
 
-      - name: Push LDDs to Github
+      - name: Move the execution logs to their new home
+        run: |
+          rm -fr ${{ env.LOGS_PATH }}
+          mkdir -p ${{ env.LOGS_PATH }}
+          cp -R /tmp/artifacts/*logs ${{ env.LOGS_PATH }}/
+
+      - name: Display structure of downloaded files
+        run: ls -R ${{ env.LOGS_PATH }}
+
+      - name: Push LDDs and Logs to Github
         run: |
           git config --local user.email "pdsen-ci@jpl.nasa.gov"
           git config --local user.name "PDSEN CI Bot"
