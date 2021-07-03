@@ -155,10 +155,14 @@ jobs:
           git fetch --prune --unshallow --tags
           git tag -l | grep 'dev' | xargs -t -I arg sh -c 'git tag -d arg;git push --delete origin arg;'
 
-      - name: Clean out old LDDs
+      - name: Clean out old LDDs and logs
         run: |
           path=$(dirname ${{ env.DEPLOY_PATH }})
           rm -fr $path/*
+
+          path=$(dirname ${{ env.LOGS_PATH }})
+          rm -fr $path/*
+
 
       - name: Move the LDDs to their new home
         run: |
