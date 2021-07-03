@@ -113,6 +113,11 @@ jobs:
       - name: Display structure of downloaded files
         run: ls -R /tmp/artifacts
           
+      - name: Clean out old logs
+        run: |
+          path=$(dirname ${{ env.LOGS_PATH }})
+          rm -fr $path/*
+
       - name: Move the execution logs to their new home
         run: |
           rm -fr ${{ env.LOGS_PATH }}
@@ -159,6 +164,10 @@ jobs:
         run: |
           path=$(dirname ${{ env.DEPLOY_PATH }})
           rm -fr $path/*
+
+          path=$(dirname ${{ env.LOGS_PATH }})
+          rm -fr $path/*
+
 
       - name: Move the LDDs to their new home
         run: |
