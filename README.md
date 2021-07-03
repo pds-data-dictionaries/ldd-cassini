@@ -1,12 +1,12 @@
-# {LDD Name} Local Data Dictionary (LDD)
+# Cassini Mission Local Data Dictionary (LDD)
 
-The {LDD Name} dictionary [enter description here]
+The Cassini Mission dictionary
 
-LDD Steward: [enter steward node here]
+LDD Steward: @lylehuber
 
 ## Releases
 
-![LDD Automation with PDSEN CI Bot](https://github.com/pds-data-dictionaries/ldd-template/workflows/LDD%20Automation%20with%20PDSEN%20CI%20Bot/badge.svg) [TODO - replace with this repo badge]
+![LDD Automation with PDSEN CI Bot](https://github.com/pds-data-dictionaries/ldd-cassini/workflows/LDD%20Automation%20with%20PDSEN%20CI%20Bot/badge.svg)
 
 * **Stable Release** (the latest released LDDs) - https://pds.nasa.gov/datastandards/dictionaries/
 * **Unstable Release** (the latest working, unstable build) - See the `build/development` 
