@@ -1,18 +1,18 @@
 PDS4 Local Data Dictionary Processing Report
 
 Configuration:
-   LDDTool Version        13.0.2
-   LDD Version Id:        1.5.0.0
-   LDD Label Version Id:  1.0
+   LDDTool Version        13.1.0
+   LDD Version Id:        1.6.0.0
+   LDD Label Version Id:  1.19
    LDD Discipline (T/F):  false
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Sat Jul 03 00:37:51 UTC 2021
+   Time                   Wed Nov 17 22:08:48 UTC 2021
    Common Schema          [PDS4_PDS_1D00.xsd]
    Common Schematron      [PDS4_PDS_1D00.sch]
    IM Version Id:         1.13.0.0
    IM Namespace Id:       pds
-   IM Label Version Id:   1.0
+   IM Label Version Id:   1.19
    IM Object Model        [UpperModel.pont]
    IM Data Dictionary     [dd11179.pins]
    IM Configuration File  [MDPTNConfigClassDisp.xml]
@@ -40,12 +40,12 @@ Detailed validation messages
 
 Parsed Input - Header:
    LDD Name               Cassini Mission
-   LDD Version            1.5.0.0
+   LDD Version            1.6.0.0
    Full Name              Lyle Huber
    Steward                atm
    Namespace Id           cassini
    Comment                _TBD_Ingest_LDD
-   Last Modification Time 2020-02-10T11:25:00
+   Last Modification Time 2021-11-17T18:38:00
    PDS4 Merge Flag        false
 
 Parsed Input - Attributes:
@@ -1096,7 +1096,7 @@ Parsed Input - Attributes:
    version                1.13
    value data type        ASCII_Real
    description            The emission angle, the angle between the surface normal vector at the intercept point and a vector from the intercept point to the spacecraft, measured at the intersection of the boresight and the ring plane. 
-   minimum value          0
+   minimum value          -200
    maximum value          180
    unit of measure type   Units_of_Angle
 
@@ -1134,8 +1134,8 @@ Parsed Input - Attributes:
    version                1.13
    value data type        ASCII_Real
    description            The mean_ring_boresight_solar_zenith is the angle between the direction vector of the Sun and the normal to the ring plane at the point at which the boresight intersects the ring plane. Unit is degrees. 
-   minimum value          -90
-   maximum value          90
+   minimum value          0
+   maximum value          180
    unit of measure type   Units_of_Angle
 
    name                   mean_ring_boresight_spacecraft_range
