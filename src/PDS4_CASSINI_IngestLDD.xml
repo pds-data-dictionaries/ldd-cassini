@@ -6,15 +6,23 @@
 <Ingest_LDD xmlns="http://pds.nasa.gov/pds4/pds/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pds="http://pds.nasa.gov/pds4/pds/v1" xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 
                         https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1G00.xsd">
   <name>Cassini Mission</name>
-  <ldd_version_id>1.5.0.0</ldd_version_id>
+  <ldd_version_id>1.6.0.0</ldd_version_id>
   <dictionary_type>Mission</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>atm</steward_id>
   <namespace_id>cassini</namespace_id>
-  <last_modification_date_time>2020-02-10T11:25:00</last_modification_date_time>
+  <last_modification_date_time>2021-11-17T18:38:00</last_modification_date_time>
 <!-- 
   <Modification_History>
     <Modification_Detail>
+      <modification_date>2021-11-17</modification_date>
+      <version_id>1.6</version_id>
+      <description>
+        Fixed minor errors in value ranges.
+        Updated to IM version 1.16.00 
+        Note: future work will need to resolve whether or not to add enumerated values to some attributes. Search this file for "@@@" to find the attributes under consideration.
+      </description>
+    </Modification_Detail>        
     <Modification_Detail>
       <modification_date>2020-02-10</modification_date>
       <version_id>1.5</version_id>
@@ -4245,7 +4253,7 @@
 
   <DD_Attribute>
     <name>mean_ring_boresight_emission_angle</name>
-    <version_id>1.0</version_id>
+    <version_id>2.0</version_id>
     <local_identifier>cassini.mean_ring_boresight_emission_angle</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Mitch Gordon</submitter_name>
@@ -4254,7 +4262,7 @@
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Real</value_data_type>
-      <minimum_value>0</minimum_value>
+      <minimum_value>-200</minimum_value>
       <maximum_value>180</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
       <specified_unit_id>degree</specified_unit_id>
@@ -4342,7 +4350,7 @@
 
   <DD_Attribute>
     <name>mean_ring_boresight_solar_zenith</name>
-    <version_id>1.0</version_id>
+    <version_id>2.0</version_id>
     <local_identifier>cassini.mean_ring_boresight_solar_zenith</local_identifier>
     <nillable_flag>false</nillable_flag>
     <submitter_name>Mitch Gordon</submitter_name>
@@ -4353,8 +4361,8 @@
     <DD_Value_Domain>
       <enumeration_flag>false</enumeration_flag>
       <value_data_type>ASCII_Real</value_data_type>
-      <minimum_value>-90</minimum_value>
-      <maximum_value>90</maximum_value>
+      <minimum_value>0</minimum_value>
+      <maximum_value>180</maximum_value>
       <unit_of_measure_type>Units_of_Angle</unit_of_measure_type>
       <specified_unit_id>degree</specified_unit_id>
     </DD_Value_Domain>
