@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-  <!-- PDS4 Schematron for Name Space Id:cassini  Version:1.6.0.0 - Wed Nov 17 22:08:48 UTC 2021 -->
+  <!-- PDS4 Schematron for Name Space Id:cassini  Version:1.6.0.0 - Wed Nov 17 22:15:31 UTC 2021 -->
   <!-- Generated from the PDS4 Information Model Version 1.13.0.0 - System Build 10a -->
   <!-- *** This PDS4 schematron file is an operational deliverable. *** -->
 <sch:schema xmlns:sch="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
