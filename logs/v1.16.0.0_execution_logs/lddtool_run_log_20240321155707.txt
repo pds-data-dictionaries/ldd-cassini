@@ -1,0 +1,14 @@
+[Fatal Error] PDS4_CASSINI_IngestLDD.xml:27:53: The string "--" is not permitted within comments.
+org.xml.sax.SAXParseException; systemId: file:///home/runner/work/ldd-cassini/ldd-cassini/src/PDS4_CASSINI_IngestLDD.xml; lineNumber: 27; columnNumber: 53; The string "--" is not permitted within comments.
+	at java.xml/com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:261)
+	at java.xml/com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:339)
+	at java.xml/javax.xml.parsers.DocumentBuilder.parse(DocumentBuilder.java:178)
+	at gov.nasa.pds.model.plugin.LDDDOMParser.parseXmlFile(LDDDOMParser.java:163)
+	at gov.nasa.pds.model.plugin.LDDDOMParser.getLocalDD(LDDDOMParser.java:127)
+	at gov.nasa.pds.model.plugin.GetDOMModel.getDOMModel(GetDOMModel.java:286)
+	at gov.nasa.pds.model.plugin.DMDocument.main(DMDocument.java:614)
+Exception in thread "main" java.lang.NullPointerException
+	at gov.nasa.pds.model.plugin.LDDDOMParser.parseDocument(LDDDOMParser.java:175)
+	at gov.nasa.pds.model.plugin.LDDDOMParser.getLocalDD(LDDDOMParser.java:131)
+	at gov.nasa.pds.model.plugin.GetDOMModel.getDOMModel(GetDOMModel.java:286)
+	at gov.nasa.pds.model.plugin.DMDocument.main(DMDocument.java:614)
