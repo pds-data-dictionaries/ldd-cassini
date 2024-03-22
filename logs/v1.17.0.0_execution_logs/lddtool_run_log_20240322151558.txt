@@ -1,14 +1,12 @@
 
->>  INFO LDDTOOL Version: 13.1.0
->>  INFO IM Version Id: 1.13.0.0
+>>  INFO LDDTOOL Version: 14.3.0
+>>  INFO IM Version Id: 1.17.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.19
->>  INFO Date: Wed Nov 17 22:22:11 UTC 2021
->>  INFO PARENT_DIR: /tmp/lddtool-13.1.0
->>  INFO SCRIPT_DIR: /tmp/lddtool-13.1.0/bin
->>  INFO LIB_DIR: /tmp/lddtool-13.1.0/lib
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Rule
->>  WARNING Class omitted from build - Class Identifier:0001_NASA_PDS_1.pds.Schematron_Assert
+>>  INFO IM Label Version Id: 1.23
+>>  INFO Date: Fri Mar 22 15:15:59 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-14.3.0
+>>  INFO SCRIPT_DIR: /tmp/lddtool-14.3.0/bin
+>>  INFO LIB_DIR: /tmp/lddtool-14.3.0/lib
 
 >>> INFO Init:  - Config.Properties Namespace Id Using:pds
 >>> INFO Init:  - LDD Dictionary_Type is Mission
@@ -71,17 +69,15 @@
 >>> WARNING Attribute: <image_observation_type> - The 'type' attribute must have at least one permissible value.
 >>> WARNING Attribute: <pds3_product_version_type> - The 'type' attribute must have at least one permissible value.
 >>> WARNING Attribute: <compression_type> - The 'type' attribute must have at least one permissible value.
->>> WARNING Header:  - New steward has been specified:atm
->>> WARNING Header:  - New namespace id has been specified:cassini
 
  -- LDDTool Execution Summary --
-     20 warning(s)
+     16 warning(s)
      0 error(s)
      0 fatal error(s)
 
 Input:
 
-     - IM Version: 1D00
+     - IM Version: 1H00
      - PDS4 Flag: true
      - LDD Flag: true
      - IM Version: true
@@ -91,9 +87,9 @@ Input:
 
 Output:
 
-     - ./PDS4_CASSINI_1D00_1600.xsd
-     - ./PDS4_CASSINI_1D00_1600.sch
-     - ./PDS4_CASSINI_1D00_1600.xml
-     - ./PDS4_CASSINI_1D00_1600.JSON
+     - ./PDS4_CASSINI_1H00_1700.xsd
+     - ./PDS4_CASSINI_1H00_1700.sch
+     - ./PDS4_CASSINI_1H00_1700.xml
+     - ./export/JSON/PDS4_PDS_1H00.JSON
 
 >>  INFO Exit(0)
