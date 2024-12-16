@@ -11,15 +11,22 @@
   http://pds.nasa.gov/pds4/cart/v1 https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1N00_1970.xsd">
  
   <name>Cassini Mission</name>
-  <ldd_version_id>1.7.0.0</ldd_version_id>
+  <ldd_version_id>1.7.0.1</ldd_version_id>
   <dictionary_type>Mission</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>atm</steward_id>
   
   <namespace_id>cassini</namespace_id>
-  <last_modification_date_time>2024-11-21T18:00:00</last_modification_date_time>
-<!-- 
+  <last_modification_date_time>2024-12-16T18:00:00</last_modification_date_time>
+  <!-- 
   <Modification_History>
+    <Modification_Detail>
+      <modification_date>2024-08-27</modification_date>
+      <version_id>1.7.0.1</version_id>
+      <description>
+        Bug fix for some of the footprint units.
+      </description>
+    </Modification_Detail>
     <Modification_Detail>
       <modification_date>2024-03-21</modification_date>
       <version_id>1.7</version_id>
@@ -232,19 +239,19 @@
       </DD_Permissible_Value>   
       <DD_Permissible_Value>
         <value>CRUISE SCIENCE</value>
-        <value_meaning>This value appears in some PDS3 labels but is not defined in the docmentation.</value_meaning>
+        <value_meaning>This value appears in some PDS3 labels but is not defined in the documentation.</value_meaning>
       </DD_Permissible_Value>   
       <DD_Permissible_Value>
         <value>CRUISE</value>
-        <value_meaning>This value appears in some PDS3 labels but is not defined in the docmentation.</value_meaning>
+        <value_meaning>This value appears in some PDS3 labels but is not defined in the documentation.</value_meaning>
       </DD_Permissible_Value>   
       <DD_Permissible_Value>
         <value>EARTH-JUPITER CRUISE</value>
-        <value_meaning>This value appears in some PDS3 labels but is not defined in the docmentation.</value_meaning>
+        <value_meaning>This value appears in some PDS3 labels but is not defined in the documentation.</value_meaning>
       </DD_Permissible_Value>   
       <DD_Permissible_Value>
         <value>Information not provided</value>
-        <value_meaning>No value was given in the PDS3 label..</value_meaning>
+        <value_meaning>No value was given in the PDS3 label.</value_meaning>
       </DD_Permissible_Value>   
 
 <!-- The following section duplicates the values in the preceding 
@@ -309,10 +316,6 @@
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>SCIENCE CRUISE</value>
-        <value_meaning>2002-07-08 to 2004-06-10</value_meaning>
-      </DD_Permissible_Value>
-      <DD_Permissible_Value>
-        <value>SCIENCE_CRUISE</value>
         <value_meaning>2002-07-08 to 2004-06-10</value_meaning>
       </DD_Permissible_Value>
       <DD_Permissible_Value>
