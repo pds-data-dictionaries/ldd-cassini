@@ -1,0 +1,4 @@
+[submodule "src/dependencies/ldd-cart"]
+	path = src/dependencies/ldd-cart
+	url = https://github.com/pds-data-dictionaries/ldd-cart
+	branch = main
