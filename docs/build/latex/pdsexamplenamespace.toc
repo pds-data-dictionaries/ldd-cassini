@@ -1,0 +1,11 @@
+\babel@toc {english}{}
+\contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}%
+\contentsline {chapter}{\numberline {2}Overview of the \{name\} Local Data Dictionary}{5}{chapter.2}%
+\contentsline {chapter}{\numberline {3}How to Include the \{name\} Local Data Dictionary in a PDS4 Label}{7}{chapter.3}%
+\contentsline {chapter}{\numberline {4}Organization of Classes and Attributes}{9}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Class 1}{9}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Class 2}{9}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Definitions}{11}{chapter.5}%
+\contentsline {chapter}{\numberline {6}Examples}{13}{chapter.6}%
+\contentsline {chapter}{\numberline {7}\textless {}My\_First\_LDD\textgreater {}}{15}{chapter.7}%
+\contentsline {section}{\numberline {7.1}\textless {}my\_first\_attribute\textgreater {}}{15}{section.7.1}%
