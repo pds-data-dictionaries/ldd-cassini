@@ -1,0 +1,199 @@
+
+>>  INFO LDDTOOL Version: 15.2.3
+>>  INFO IM Version Id: 1.23.0.0
+>>  INFO IM Namespace Id: pds
+>>  INFO IM Label Version Id: 1.0
+>>  INFO Date: Mon Dec 16 21:08:46 UTC 2024
+>>  INFO PARENT_DIR: /tmp/lddtool-15.2.3/Data/
+
+>>> INFO Init:  - Config.Properties Namespace Id Found:geom
+>>> INFO Init:  - Config.Properties Namespace Id Using:geom
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Found:cart
+>>> INFO Init:  - Config.Properties Namespace Id Using:cart
+>>> INFO Init:  - LDD Dictionary_Type is Discipline
+>>> INFO Init:  - Config.Properties Namespace Id Using:pds
+>>> INFO Init:  - LDD Dictionary_Type is Mission
+>>> INFO Attribute: <gain_mode_id> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <gain_mode_id_ir> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <gain_mode_id_vis> - A 'nillable' attribute was found that is not a required attribute in at least one class.
+>>> INFO Attribute: <mission_phase_name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_stop_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <command_sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default maximum value provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <expected_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_maximum_DN_sat> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default maximum value provided by the attribute's data type is being overridden with 2277
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_ratio> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <missing_lines> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <optics_temperature_front> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <optics_temperature_back> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <order_number> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <prepare_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <prepare_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <readout_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <readout_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <received_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <compressor_id> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default minimum value provided by the attribute's data type is being overridden with -200
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default minimum value provided by the attribute's data type is being overridden with 0.
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default maximum value provided by the attribute's data type is being overridden with 24.
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mission_phase_name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_stop_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <command_sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default maximum value provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <expected_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_maximum_DN_sat> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default maximum value provided by the attribute's data type is being overridden with 2277
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_ratio> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <missing_lines> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <optics_temperature_front> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <optics_temperature_back> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <order_number> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <prepare_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <prepare_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <readout_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <readout_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <received_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <compressor_id> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default minimum value provided by the attribute's data type is being overridden with -200
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default minimum value provided by the attribute's data type is being overridden with 0.
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default maximum value provided by the attribute's data type is being overridden with 24.
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mission_phase_name> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_start_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <spacecraft_clock_stop_count> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <command_sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <electronics_bias> - The default maximum value provided by the attribute's data type is being overridden with 255
+>>> INFO Attribute: <expected_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_maximum_DN_sat> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <expected_packets> - The default maximum value provided by the attribute's data type is being overridden with 2277
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_expected_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default minimum value provided by the attribute's data type is being overridden with -999.
+>>> INFO Attribute: <inst_cmprs_rate_actual_bits> - The default maximum value provided by the attribute's data type is being overridden with 16.
+>>> INFO Attribute: <inst_cmprs_ratio> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <missing_lines> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <optics_temperature_front> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <optics_temperature_back> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <order_number> - The default minimum value provided by the attribute's data type is being overridden with -999
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <parallel_clock_voltage_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <prepare_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <prepare_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <readout_cycle_index> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <readout_cycle_index> - The default maximum value provided by the attribute's data type is being overridden with 15
+>>> INFO Attribute: <received_packets> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <sequence_number> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum> - This local attribute has a duplicate in the PDS4 data dictionary.
+>>> INFO Attribute: <valid_maximum_full_well> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <compressor_id> - The default minimum value provided by the attribute's data type is being overridden with -1
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default minimum value provided by the attribute's data type is being overridden with -200
+>>> INFO Attribute: <mean_ring_boresight_emission_angle> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default minimum value provided by the attribute's data type is being overridden with 0.
+>>> INFO Attribute: <mean_ring_boresight_local_time> - The default maximum value provided by the attribute's data type is being overridden with 24.
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_longitude_zpd> - The default maximum value provided by the attribute's data type is being overridden with 360
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_phase> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default minimum value provided by the attribute's data type is being overridden with 0
+>>> INFO Attribute: <mean_ring_boresight_solar_zenith> - The default maximum value provided by the attribute's data type is being overridden with 180
+>>> WARNING Init:  - Config.Properties Namespace Id Not Found:cassini
+>>> WARNING Attribute: <background_sampling_mode_id> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <expected_maximum> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <fast_hk_item_name> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <filter_name> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <hdac_d_level> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <hdac_h_level> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <inst_cmprs_param> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <inst_cmprs_rate> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <instrument_temperature> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <optics_temperature> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <valid_maximum> - This local attribute was not used in an Association.
+>>> WARNING Attribute: <data_conversion_type> - The 'type' attribute must have at least one permissible value.
+>>> WARNING Attribute: <image_observation_type> - The 'type' attribute must have at least one permissible value.
+>>> WARNING Attribute: <pds3_product_version_type> - The 'type' attribute must have at least one permissible value.
+>>> WARNING Attribute: <compression_type> - The 'type' attribute must have at least one permissible value.
+
+ -- LDDTool Execution Summary --
+     16 warning(s)
+     0 error(s)
+     0 fatal error(s)
+
+Input:
+
+     - IM Version: 1N00
+     - PDS4 Flag: true
+     - LDD Flag: true
+     - Export JSON Flag: true
+
+     - Ingest LDD(s): /home/runner/work/ldd-cassini/ldd-cassini/src/dependencies/ldd-cart/src/dependencies/ldd-geom/src/PDS4_GEOM_IngestLDD.xml, /home/runner/work/ldd-cassini/ldd-cassini/src/dependencies/ldd-cart/src/PDS4_CART_IngestLDD.xml, /home/runner/work/ldd-cassini/ldd-cassini/src/PDS4_CASSINI_IngestLDD.xml
+
+Output:
+
+     - ./PDS4_CASSINI_1N00_1700.xsd
+     - ./PDS4_CASSINI_1N00_1700.sch
+     - ./PDS4_CASSINI_1N00_1700.xml
+     - ./export/PDS4_PDS_1N00.JSON
+
+>>  INFO Exit(0)
