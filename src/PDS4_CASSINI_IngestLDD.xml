@@ -4948,7 +4948,7 @@
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>2</value>
-        <value_meaning>Bitweight correction: Corrects uneven bit-weighting in digitized signal signal via the appropriate look-up table.</value_meaning>
+        <value_meaning>Bitweight correction: Corrects uneven bit-weighting in digitized signal via the appropriate look-up table.</value_meaning>
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>3</value>
@@ -5013,7 +5013,7 @@
       </DD_Permissible_Value>
       <DD_Permissible_Value>
         <value>INTENSITY</value>
-        <value_meaning>Standard radiometric units (photons/cm²/s/nm/ster) were chosen.</value_meaning>
+        <value_meaning>Standard radiometric units  (photons per centimeter squared per nanometer per steradian).</value_meaning>
       </DD_Permissible_Value>
     </DD_Value_Domain>
   </DD_Attribute>
