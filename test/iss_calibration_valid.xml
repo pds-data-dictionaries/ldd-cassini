@@ -12,7 +12,7 @@
         <logical_identifier>urn:nasa:pds:bundle:collection:product</logical_identifier>
         <version_id>1.0</version_id>
         <title>Cassini ISS Calibrated Image</title>
-        <information_model_version>[IM_VERSION]</information_model_version>
+        <information_model_version>1.23.0</information_model_version>
         <product_class>Product_Observational</product_class>
     </Identification_Area>
         <Observation_Area>
@@ -43,6 +43,27 @@
                 <type>Comet</type>
             </Target_Identification>
             <Discipline_Area>
+                <cassini:ISS_Calibrated_Attributes>
+                    <cassini:dark_current_correction_type>2-parameter model</cassini:dark_current_correction_type>
+                    <cassini:dark_current_file_name>dark_current_001.img</cassini:dark_current_file_name>
+                    <cassini:dark_current_parameter_file>dark_params_001.txt</cassini:dark_current_parameter_file>
+                    <cassini:nonlinearity_correction_flag>ENABLED</cassini:nonlinearity_correction_flag>
+                    <cassini:flat_field_correction_flag>ENABLED</cassini:flat_field_correction_flag>
+                    <cassini:slope_file_name>slope_001.img</cassini:slope_file_name>
+                    <cassini:gain_correction>11.73 e-/DN</cassini:gain_correction>
+                    <cassini:geometry_projection_type>LINEARIZED</cassini:geometry_projection_type>
+                    <cassini:exposure_correction_flag>ENABLED</cassini:exposure_correction_flag>
+                    <cassini:shutter_offset_file_name>shutter_offset_001.txt</cassini:shutter_offset_file_name>
+                    <cassini:exposure_offset>2.67 ms</cassini:exposure_offset>
+                    <cassini:radiometric_correction_text>Applied radiometric calibration</cassini:radiometric_correction_text>
+                    <cassini:calibration_units>I/F</cassini:calibration_units>
+                    <cassini:calibration_stage>5</cassini:calibration_stage>
+                    <cassini:ab_pixel_correction_flag>ENABLED</cassini:ab_pixel_correction_flag>
+                    <cassini:bias_subtraction_text>Subtracted bias (overclocked pixels)</cassini:bias_subtraction_text>
+                    <cassini:data_conversion_text>Converted from 8 to 12 bits</cassini:data_conversion_text>
+                    <cassini:flat_field_file_name>flat_field_001.img</cassini:flat_field_file_name>
+                    <cassini:uneven_bit_weight_correction_flag>ENABLED</cassini:uneven_bit_weight_correction_flag>
+                </cassini:ISS_Calibrated_Attributes>
             </Discipline_Area>
         </Observation_Area>
     <File_Area_Observational>
@@ -51,27 +72,6 @@
             <creation_date_time>2024-03-20T12:00:00Z</creation_date_time>
             <file_size unit="byte">1000000</file_size>
         </File>
-            <cassini:ISS_Calibrated_Attributes>
-                <cassini:dark_current_correction_type>2-parameter model</cassini:dark_current_correction_type>
-                <cassini:dark_current_file_name>dark_current_001.img</cassini:dark_current_file_name>
-                <cassini:dark_current_parameter_file>dark_params_001.txt</cassini:dark_current_parameter_file>
-                <cassini:nonlinearity_correction_flag>ENABLED</cassini:nonlinearity_correction_flag>
-                <cassini:flat_field_correction_flag>ENABLED</cassini:flat_field_correction_flag>
-                <cassini:slope_file_name>slope_001.img</cassini:slope_file_name>
-                <cassini:gain_correction>11.73 e-/DN</cassini:gain_correction>
-                <cassini:geometry_projection_type>LINEARIZED</cassini:geometry_projection_type>
-                <cassini:exposure_correction_flag>ENABLED</cassini:exposure_correction_flag>
-                <cassini:shutter_offset_file_name>shutter_offset_001.txt</cassini:shutter_offset_file_name>
-                <cassini:exposure_offset>2.67 ms</cassini:exposure_offset>
-                <cassini:radiometric_correction_text>Applied radiometric calibration</cassini:radiometric_correction_text>
-                <cassini:calibration_units>I/F</cassini:calibration_units>
-                <cassini:calibration_stage>5</cassini:calibration_stage>
-                <cassini:ab_pixel_correction_flag>ENABLED</cassini:ab_pixel_correction_flag>
-                <cassini:bias_subtraction_text>Subtracted bias (overclocked pixels)</cassini:bias_subtraction_text>
-                <cassini:data_conversion_text>Converted from 8 to 12 bits</cassini:data_conversion_text>
-                <cassini:flat_field_file_name>flat_field_001.img</cassini:flat_field_file_name>
-                <cassini:uneven_bit_weight_correction_flag>ENABLED</cassini:uneven_bit_weight_correction_flag>
-            </cassini:ISS_Calibrated_Attributes>
         <Array_3D_Image>
             <local_identifier>test</local_identifier>
             <offset unit="byte">11264</offset>
