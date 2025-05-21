@@ -5417,11 +5417,169 @@
       </DD_Permissible_Value>
     </DD_Value_Domain>
   </DD_Attribute>
+<!--END: ES ISS Calibration edits -->
 
+<!--START: ES Legacy Metadata Attributes-->
+  <DD_Attribute>
+    <name>legacy_start_date_time</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_start_date_time</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_start_date_time attribute preserves the original START_TIME
+      value as extracted from the corresponding PDS3 data product.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_YMD</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>legacy_stop_date_time</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_stop_date_time</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_stop_date_time attribute preserves the original STOP_TIME
+      value as extracted from the corresponding PDS3 data product.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_YMD</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>legacy_start_time_doy</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_start_time_doy</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_start_time_doy attribute contains the value for START_TIME in the year
+      day-of-year format of the original PDS3 label. This value can also be previously
+      represented in cassini.start_time_doy.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_DOY</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>legacy_stop_time_doy</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_stop_time_doy</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_stop_time_doy attribute contains the value for STOP_TIME in the year
+      day-of-year format of the original PDS3 label. This value can also be previously
+      represented in cassini.stop_time_doy.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_DOY</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>legacy_image_mid_time</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_image_mid_time</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_image_mid_time attribute represents the midpoint between the
+      observation's start and stop times. It is derived from the START_TIME and STOP_TIME
+      attributes in the original PDS3 label.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_DOY</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
+  <DD_Attribute>
+    <name>legacy_image_time</name>
+    <version_id>1.0</version_id>
+    <local_identifier>cassini.legacy_image_time</local_identifier>
+    <nillable_flag>false</nillable_flag>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>
+      The legacy_image_time attribute captures the representative acquisition time for the image,
+      typically derived from the START_TIME keyword in the original PDS3 label. In cases
+      where both START_TIME and STOP_TIME are available, this value may correspond to
+      their midpoint.
+    </definition>
+    <DD_Value_Domain>
+      <enumeration_flag>false</enumeration_flag>
+      <value_data_type>ASCII_Date_Time_DOY</value_data_type>
+    </DD_Value_Domain>
+  </DD_Attribute>
 
-<!--END: ES edits -->
-  
-
+<!--START: ES Legacy Metadata Class-->
+<DD_Class>
+    <name>Legacy_Metadata</name>
+    <version_id>1.0</version_id>
+    <local_identifier>Legacy_Metadata</local_identifier>
+    <submitter_name>Emilie Simpson</submitter_name>
+    <definition>The Legacy_Metadata class allows for the preservation of original PDS3 values that may have been corrected or changed during the migration process to PDS4.</definition>
+    <abstract_flag>false</abstract_flag>
+    <element_flag>false</element_flag>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_start_date_time</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_stop_date_time</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_start_time_doy</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_stop_time_doy</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_image_mid_time</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.legacy_image_time</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.pds3_target_desc</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.pds3_target_list</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>cassini.pds3_target_name</identifier_reference>
+      <reference_type>attribute_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
+</DD_Class>
 <!-- CIRS Specific classes  -->
   
   <DD_Class>
@@ -6488,7 +6646,7 @@
     </DD_Association>
   </DD_Class>
 
-<!-- ES edits -->
+<!-- ES ISS Calibrated edits -->
   <DD_Class>
     <name>ISS_Calibrated_Attributes</name>
     <version_id>1.0</version_id>
@@ -6613,7 +6771,7 @@
     </DD_Association>
   </DD_Class>
 
-<!-- ES edits end -->
+<!-- ES ISS alibrated edits end -->
 
 <!-- VIMS Specific classes -->  
 
