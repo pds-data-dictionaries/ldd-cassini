@@ -7360,5 +7360,11 @@
           <rule_test>if (($map_projection_rings='Ring_Polar') and not (cassini:ringpolar_min_footprint_width and cassini:ringpolar_max_footprint_width and cassini:ringpolar_min_footprint_height and cassini:ringpolar_max_footprint_height)) then false() else true()</rule_test>
           <rule_message>You must use all four ring polar footprint attributes, cassini:ringpolar_min_footprint_width, cassini:ringpolar_max_footprint_width, cassini:ringpolar_min_footprint_height, cassini:ringpolar_max_footprint_height, associated with the ring polar projection. </rule_message>
     </DD_Rule_Statement>
+    <DD_Rule_Statement>
+      <rule_type>Assert</rule_type>
+      <rule_test>
+        if ((cassini:dark_current_correction_type='Subtracted dark file' and not(cassini:dark_current_file_name)) or (cassini:dark_current_correction_type != 'Subtracted dark file' and cassini:dark_current_file_name)) then false() else true()</rule_test>
+      <rule_message> cassini:dark_current_file_name must be provided if and only if cassini:dark_current_correction_type is "Subtracted dark file".</rule_message>
+    </DD_Rule_Statement>
   </DD_Rule>
 </Ingest_LDD>
