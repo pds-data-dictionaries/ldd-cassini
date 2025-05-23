@@ -1,9 +1,9 @@
 
 >>  INFO LDDTOOL Version: 15.3.0
->>  INFO IM Version Id: 1.24.0.0
+>>  INFO IM Version Id: 1.19.0.0
 >>  INFO IM Namespace Id: pds
->>  INFO IM Label Version Id: 1.0
->>  INFO Date: Fri May 23 16:52:20 UTC 2025
+>>  INFO IM Label Version Id: 1.25
+>>  INFO Date: Fri May 23 16:55:13 UTC 2025
 >>  INFO PARENT_DIR: /tmp/lddtool-15.3.0/Data/
 
 >>> INFO Init:  - Config.Properties Namespace Id Found:geom
@@ -490,18 +490,19 @@
 
 Input:
 
-     - IM Version: 1O00
+     - IM Version: 1J00
      - PDS4 Flag: true
      - LDD Flag: true
+     - IM Version: true
      - Export JSON Flag: true
 
      - Ingest LDD(s): /home/runner/work/ldd-cassini/ldd-cassini/src/dependencies/ldd-cart/src/dependencies/ldd-geom/src/PDS4_GEOM_IngestLDD.xml, /home/runner/work/ldd-cassini/ldd-cassini/src/dependencies/ldd-cart/src/PDS4_CART_IngestLDD.xml
 
 Output:
 
-     - ./PDS4_CART_1O00_1970.xsd
-     - ./PDS4_CART_1O00_1970.sch
-     - ./PDS4_CART_1O00_1970.xml
-     - ./export/PDS4_PDS_1O00.JSON
+     - ./PDS4_CART_1J00_1970.xsd
+     - ./PDS4_CART_1J00_1970.sch
+     - ./PDS4_CART_1J00_1970.xml
+     - ./export/PDS4_PDS_1J00.JSON
 
 >>  INFO Exit(0)
