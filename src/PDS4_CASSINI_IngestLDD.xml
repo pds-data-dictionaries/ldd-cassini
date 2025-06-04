@@ -335,10 +335,6 @@
         <value_meaning>2004-01-12 to 2004-06-10</value_meaning>
       </DD_Permissible_Value>
       <DD_Permissible_Value>
-        <value>APPROACH_SCIENCE</value>
-        <value_meaning>2004-01-12 to 2004-06-10</value_meaning>
-      </DD_Permissible_Value>
-      <DD_Permissible_Value>
         <value>TOUR PRE-HUYGENS</value>
         <value_meaning>2004-06-11 to 2004-12-24</value_meaning>
       </DD_Permissible_Value>
@@ -7315,7 +7311,7 @@
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>    
+    </DD_Association> 
     <DD_Association>
       <identifier_reference>Calibrated_Attributes</identifier_reference>
       <reference_type>component_of</reference_type>
@@ -7333,7 +7329,13 @@
       <reference_type>component_of</reference_type>
       <minimum_occurrences>0</minimum_occurrences>
       <maximum_occurrences>1</maximum_occurrences>
-    </DD_Association>  
+    </DD_Association>
+    <DD_Association>
+      <identifier_reference>Legacy_Metadata</identifier_reference>
+      <reference_type>component_of</reference_type>
+      <minimum_occurrences>0</minimum_occurrences>
+      <maximum_occurrences>1</maximum_occurrences>
+    </DD_Association>
   </DD_Class>
   
   <!-- Schematron Rules -->
