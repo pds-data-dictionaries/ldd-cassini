@@ -22,16 +22,16 @@
   <Modification_History>
     <Modification_Detail>
       <modification_date>2025-09-29</modification_date>
-      <version_id>1.8</version_id>
+      <version_id>1.8.1</version_id>
       <description>
-        Added missing Legacy_Metadata to Cassini class
+        Added missing Legacy_Metadata to Cassini umbrella class
       </description>
     </Modification_Detail>	
     <Modification_Detail>
       <modification_date>2025-04-28</modification_date>
       <version_id>1.8</version_id>
       <description>
-        Added ISS_Calibrated_Attributes class
+        Added ISS_Calibrated_Attributes and Legacy_Metadata classes
       </description>
     </Modification_Detail>	
     <Modification_Detail>
