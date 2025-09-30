@@ -11,20 +11,27 @@
   http://pds.nasa.gov/pds4/cart/v1 https://pds.nasa.gov/pds4/cart/v1/PDS4_CART_1O00_1970.xsd">
  
   <name>Cassini Mission</name>
-  <ldd_version_id>1.8.0.0</ldd_version_id>
+  <ldd_version_id>1.8.1.0</ldd_version_id>
   <dictionary_type>Mission</dictionary_type>
   <full_name>Lyle Huber</full_name>
   <steward_id>atm</steward_id>
   
   <namespace_id>cassini</namespace_id>
-  <last_modification_date_time>2025-06-17T09:02:00</last_modification_date_time>
+  <last_modification_date_time>2025-09-29T08:06:00</last_modification_date_time>
 <!-- 
   <Modification_History>
+    <Modification_Detail>
+      <modification_date>2025-09-29</modification_date>
+      <version_id>1.8.1</version_id>
+      <description>
+        Added missing Legacy_Metadata to Cassini umbrella class
+      </description>
+    </Modification_Detail>	
     <Modification_Detail>
       <modification_date>2025-04-28</modification_date>
       <version_id>1.8</version_id>
       <description>
-        Added ISS_Calibrated_Attributes class
+        Added ISS_Calibrated_Attributes and Legacy_Metadata classes
       </description>
     </Modification_Detail>	
     <Modification_Detail>

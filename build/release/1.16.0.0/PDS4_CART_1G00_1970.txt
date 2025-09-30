@@ -7,7 +7,7 @@ Configuration:
    LDD Discipline (T/F):  true
    LDD Namespace URL:     http://pds.nasa.gov/pds4/
    LDD URN Prefix:        urn:nasa:pds:
-   Time                   Tue Jun 17 16:50:26 UTC 2025
+   Time                   Mon Sep 29 17:03:59 UTC 2025
    Common Schema          [PDS4_PDS_1G00.xsd]
    Common Schematron      [PDS4_PDS_1G00.sch]
    IM Version Id:         1.16.0.0
@@ -221,7 +221,7 @@ Parsed Input - Attributes:
    name                   emission_angle
    version                1.16
    value data type        ASCII_Real
-   description            The emission_angle element provides the value of the angle between the surface normal vector at the intercept point and a vector from the intercept point to the spacecraft. The emission_angle varies from 0 degrees when the spacecraft is viewing the subspacecraft point (nadir viewing) to 90 degrees when the intercept is tangent to the surface of the target body. Thus, higher values of emission_angle indicate more oblique viewing of the target. For ring data, values in the range of 90 to 180 degrees indicate viewing on the unlit side from oblique or edge-on at 90 degrees to the unlit nadir at 180 degrees. 
+   description            The emission_angle element provides a measure of the relationship between the instrument viewing position and the surface normal vector at the intercept point. Specifically, it is the angle, measured at the intercept point, between the local surface normal vector and a vector in the direction of the outgoing photon to the observing instrument. The emission_angle varies from 0 degrees when the spacecraft is viewing the subspacecraft point (nadir viewing) to 90 degrees when the intercept is tangent to the surface of the target body. Thus, higher values of emission_angle indicate more oblique viewing of the target. In the context of planetary rings, the local surface normal vector is always on the side of the ring plane illuminated by the light source. Thus, the emission_angle varies from 0 degrees when the spacecraft is viewing the illuminated side of the rings face-on, to 90 degrees when viewing the rings edge-on (that is, the spacecraft is in the ring plane), to 180 degrees when the spacecraft is viewing the unlit side of the rings face-on. 
    minimum value          0
    maximum value          180
    unit of measure type   Units_of_Angle
@@ -290,7 +290,7 @@ Parsed Input - Attributes:
    name                   incidence_angle
    version                1.16
    value data type        ASCII_Real
-   description            The incidence_angle element provides a measure of the lighting condition at the intercept point. Incidence angle is the angle between the local vertical at the intercept point (surface) and a vector from the intercept point to the sun. The incidence_angle varies from 0 degrees when the intercept point coincides with the subsolar point to 90 degrees when the intercept point is at the terminator (i.e., in the shadowed or dark portion of the target body). 
+   description            The incidence_angle element provides a measure of the lighting condition at the intercept point. Specifically, it is the angle, measured at the intercept point, between a vector in the direction of an incoming photon from the illumination source and the local surface normal vector. The incidence_angle varies from 0 degrees when the intercept point coincides with the subsolar point to 90 degrees when the intercept is tangent to the surface of the target body. In the context of planetary rings, the local surface normal vector is always on the side of the ring plane illuminated by the light source. Thus, the incidence_angle varies from 0 degrees if the light source illuminates the rings face-on, to 90 degrees if the light source illuminates the rings edge-on. 
    minimum value          0
    maximum value          180
    unit of measure type   Units_of_Angle
@@ -731,7 +731,7 @@ Parsed Input - Attributes:
    name                   phase_angle
    version                1.16
    value data type        ASCII_Real
-   description            The phase_angle element provides a measure of the relationship between the instrument viewing position and incident illumination (such as solar light). Phase angle is measured at the target; it is the angle between a vector to the illumination source and a vector to the instrument. If illumination is from behind the instrument, phase_angle will be small. 
+   description            The phase_angle element provides a measure of the relationship between the instrument viewing position and incident illumination (such as solar light). Specifically, it is the angle, measured at the intercept point, between a vector in the direction of an incoming photon from the illumination source and a vector in the direction of an outgoing photon to the observing instrument. If illumination is from behind the instrument, phase_angle will be small. 
    minimum value          0
    maximum value          180
    unit of measure type   Units_of_Angle
